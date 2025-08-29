@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Muestra - Supertienda 2020.xlsx
+Query=`in$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Id. de la fila" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="Double" />
+            <Field name="Id. del pedido" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Fecha del pedido" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Fecha de envío" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Forma de envío" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Id. del cliente" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Nombre del cliente" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Segmento" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Ciudad" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Estado" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="País/Región" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Región" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Id. del producto" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Categoría" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Subcategoría" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Nombre del producto" size="255" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="V_String" />
+            <Field name="Total" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="Double" />
+            <Field name="Cantidad" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="Double" />
+            <Field name="Descuento" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="Double" />
+            <Field name="Ganancia" source="File: C:\Users\oeescobedol\Documents\Alteryx\Muestra - Supertienda 2020.xlsx|||`in$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="162" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\OEESCO~1\AppData\Local\Temp\Engine_3868_d437b209db064d23ac6490066eeeafca_\Engine_10284_6d9d25c6ec7a48949ac0195823acee9e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="402" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\OEESCO~1\AppData\Local\Temp\Engine_3868_d437b209db064d23ac6490066eeeafca_\Engine_10284_f986732fb305452698bc94a1fa63f042_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings>
+        <Position x="246" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.Selecciona una variable numerica"><![CDATA[Numero=Cantidad
+]]></Value>
+          <Value name="Numeric Up Down (5)">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Sumavalorespecificado (3)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro=".\Sumavalorespecificado.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Selecciona una variable numerica" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output7" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Ejemplo de uso de macro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="cfadf8b6-4361-4937-9272-d4ceae42c443" />
+      <Telemetry>
+        <PreviousWorkflowId value="78ee2106-2c74-4711-a103-0154f99a6e0d" />
+        <OriginWorkflowId value="cfadf8b6-4361-4937-9272-d4ceae42c443" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

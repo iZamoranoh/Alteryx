@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxRPluginGui.R">
+        <Position x="54" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RScript><![CDATA[library(Rcpp)
+library(RSelenium)
+library(xml2)
+library(XML)
+library(rlist)
+library(stringi)
+
+rD <- rsDriver(browser = "firefox", port = 4822L)
+remDr <- rD[["client"]]
+remDr$navigate("https://informacionfinanciera.cnsf.gob.mx/")
+webElem <- remDr$findElement(using = 'xpath', "//select[@name='ctl00$MainContent$ddlTipInst']/option[@value='S']")
+webElem$clickElement()
+Sys.sleep(1)
+webElem <- remDr$findElement(using = 'xpath', "//select[@name='ctl00$MainContent$ddlListInst']/option[@value='0074S']")
+webElem$clickElement()
+Sys.sleep(1)
+webElem <- remDr$findElement(using = 'xpath', "//select[@name='ctl00$MainContent$ddlEdoFin']/option[@value='1']")
+webElem$clickElement()
+Sys.sleep(1)
+webElem <- remDr$findElement(using = 'xpath', "//select[@name='ctl00$MainContent$ddlPeriodo']/option[@value='9/30/2020 12:00:00 AM']")
+webElem$clickElement()
+Sys.sleep(1)
+webElem <- remDr$findElement(using = 'xpath', "//select[@name='ctl00$MainContent$ddlOperacion']/option[@value='00000000000000']")
+webElem$clickElement()
+Sys.sleep(1)
+
+
+remDr$findElements("id", "MainContent_btnConsultar")[[1]]$clickElement()
+Sys.sleep(5)
+
+html <- remDr$getPageSource()[[1]]
+doc <- htmlParse(html)
+tables2<-readHTMLTable(doc)
+Data<- tables2[["ctl00_MainContent_ReportViewer1_fixedTable"]]
+
+remDr$close()
+rD$server$stop()
+system("taskkill /im java.exe /f", intern=FALSE, ignore.stdout=FALSE)
+
+
+write.Alteryx(Data, 1)
+
+]]></RScript>
+          <UseFullUpdate value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output1">
+          <RecordInfo>
+            <Field name="V1" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="V2" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="V3" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="V4" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="V5" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="V6" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="V7" size="1073741823" source="R-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxRPluginEngine.dll" EngineDllEntryPoint="AlteryxR" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="426" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\OEESCO~1\AppData\Local\Temp\Engine_10192_fe1aba483d7a434fa3ef37208fff28eb_\Engine_10284_8e2b621e3ebd46709716bcd065e4212f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings>
+        <Position x="150" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Ranges">24-39</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="SelectRecords.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="234" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsNull([V4]) THEN [V3] ELSE [V4] ENDIF" field="V4" size="1073741823" type="V_WString" />
+            <FormulaField expression="IF [V2]=&quot;Agroasemex, S.A.&quot; then [V3] ELSE [V2] ENDIF" field="V2" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>V4 = IF IsNull([V4]) THEN [V3] ELSE [V4] ENDIF
+V2 = IF [V2]="Agroasemex, S.A." t...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="354" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="V2" selected="True" />
+            <SelectField field="V4" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output1" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>flujo3_18082021</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="24f46c69-d126-4e7e-a2e4-a52e7e6941cc" />
+      <Telemetry>
+        <PreviousWorkflowId value="031999a2-1486-4931-99be-35e461d71cd8" />
+        <OriginWorkflowId value="24f46c69-d126-4e7e-a2e4-a52e7e6941cc" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

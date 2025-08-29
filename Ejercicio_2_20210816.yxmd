@@ -1,0 +1,773 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File>D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Clasificacion 1.csv</File>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Clasificacion 1.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Clasificacion 1.csv" type="V_String" />
+            <Field name="Sepal.Length" size="254" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Clasificacion 1.csv" type="V_String" />
+            <Field name="Sepal.Width" size="254" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Clasificacion 1.csv" type="V_String" />
+            <Field name="Petal.Length" size="254" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Clasificacion 1.csv" type="V_String" />
+            <Field name="Petal.Width" size="254" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Clasificacion 1.csv" type="V_String" />
+            <Field name="Species" size="254" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Clasificacion 1.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="150" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>D:\Users\izamoranoh\AppData\Local\Temp\Engine_5812_a6eebc22d65d449982811cb3b511647b_\Engine_12480_6304c6f6195542e89aaf794feab278fc_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Field_1" selected="False" />
+            <SelectField field="Sepal.Length" selected="True" type="Double" size="8" />
+            <SelectField field="Sepal.Width" selected="True" type="Double" size="8" />
+            <SelectField field="Petal.Length" selected="True" type="Double" size="8" />
+            <SelectField field="Petal.Width" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="294" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="fields">Sepal.Length + Sepal.Width + Petal.Length + Petal.Width</Value>
+          <Value name="scale">False</Value>
+          <Value name="max components">2</Value>
+          <Value name="append pc">True</Value>
+          <Value name="num pc">2</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sepal.Length" source="R-DATA:" type="Double" />
+            <Field name="Sepal.Width" source="R-DATA:" type="Double" />
+            <Field name="Petal.Length" source="R-DATA:" type="Double" />
+            <Field name="Petal.Width" source="R-DATA:" type="Double" />
+            <Field name="Species" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="PC1" source="R-DATA:" type="Double" />
+            <Field name="PC2" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Reports">
+          <RecordInfo>
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Report" size="2147483647" source="Report: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Principal_Components.yxmc" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="450" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>D:\Users\izamoranoh\AppData\Local\Temp\Engine_5812_a6eebc22d65d449982811cb3b511647b_\Engine_12480_7bbeec85c267465db872f2c9ed400234_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Perfil</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="402" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>D:\Users\izamoranoh\AppData\Local\Temp\Engine_5812_a6eebc22d65d449982811cb3b511647b_\Engine_12480_e2532ecf5cd241e9bb712900edee2abd_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Informe</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="378" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Species] == 'setosa' THEN 1 ELSEIF [Species] == 'versicolor' THEN 2 ELSE 3 ENDIF" field="Specie_cat" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Specie_cat = IF [Species] == 'setosa' THEN 1 ELSEIF [Species] == 'versicolor' TH...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="462" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>scatter</type>
+              <mode>markers</mode>
+              <xsrc>PC1</xsrc>
+              <ysrc>PC2</ysrc>
+              <name>Dispersión</name>
+              <marker>
+                <size>6</size>
+                <line>
+                  <width>0</width>
+                </line>
+                <colorsrc>Specie_cat</colorsrc>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>1</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>2</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <color>3</color>
+                <colorscale json:Array="true">
+                  <colorscale>0</colorscale>
+                  <colorscale>#aa0dfe</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.04</colorscale>
+                  <colorscale>#3283fe</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.08</colorscale>
+                  <colorscale>#85660d</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.12</colorscale>
+                  <colorscale>#782ab6</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.16</colorscale>
+                  <colorscale>#565656</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.2</colorscale>
+                  <colorscale>#1c8356</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.24</colorscale>
+                  <colorscale>#16ff32</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.28</colorscale>
+                  <colorscale>#f7e1a0</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.32</colorscale>
+                  <colorscale>#e2e2e2</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.36</colorscale>
+                  <colorscale>#1cbe4f</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.4</colorscale>
+                  <colorscale>#c4451c</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.44</colorscale>
+                  <colorscale>#dea0fd</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.48</colorscale>
+                  <colorscale>#fe00fa</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.52</colorscale>
+                  <colorscale>#325a9b</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.56</colorscale>
+                  <colorscale>#feaf16</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.6</colorscale>
+                  <colorscale>#f8a19f</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.64</colorscale>
+                  <colorscale>#90ad1c</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.68</colorscale>
+                  <colorscale>#f6222e</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.72</colorscale>
+                  <colorscale>#1cffce</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.76</colorscale>
+                  <colorscale>#2ed9ff</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.8</colorscale>
+                  <colorscale>#b10da1</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.84</colorscale>
+                  <colorscale>#c075a6</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.88</colorscale>
+                  <colorscale>#fc1cbf</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.92</colorscale>
+                  <colorscale>#b00068</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.96</colorscale>
+                  <colorscale>#fbe426</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>1</colorscale>
+                  <colorscale>#fa0087</colorscale>
+                </colorscale>
+              </marker>
+              <autocolorscale>false</autocolorscale>
+            </Traces>
+            <Layout>
+              <title>
+                <text>
+                </text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+              </font>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-3.680548723841103</range>
+                <range>4.2523904020483387</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>PC1</text>
+                </title>
+                <type>linear</type>
+              </xaxis>
+              <yaxis>
+                <range>-1.539340111206575</range>
+                <range>1.4311462149399201</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>PC2</text>
+                </title>
+                <type>linear</type>
+              </yaxis>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings>
+        <Position x="318" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="model.name">SVM</Value>
+          <Value name="select.target">Species</Value>
+          <Value name="select.predictors">Sepal.Length=True,Sepal.Width=True,Petal.Length=True,Petal.Width=True,Species=False</Value>
+          <Value name="type.classification">True</Value>
+          <Value name="class.c">True</Value>
+          <Value name="class.nu">False</Value>
+          <Value name="nu_nu">0.05</Value>
+          <Value name="type.regression">False</Value>
+          <Value name="reg.eps">True</Value>
+          <Value name="reg.nu">False</Value>
+          <Value name="reg.nu_nu">0.05</Value>
+          <Value name="model.cust">False</Value>
+          <Value name="user.define">True</Value>
+          <Value name="kernel.linear">False</Value>
+          <Value name="linear.cost">1.00</Value>
+          <Value name="kernel.polynomial">False</Value>
+          <Value name="poly.cost">1.00</Value>
+          <Value name="poly.degree">2.000</Value>
+          <Value name="poly.gamma">1.00000</Value>
+          <Value name="poly.coef0">1.00</Value>
+          <Value name="kernel.radial">True</Value>
+          <Value name="rad.cost">1.00</Value>
+          <Value name="rad.gamma">1.00000</Value>
+          <Value name="kernel.sigmoid">False</Value>
+          <Value name="sigmoid.cost">1.00</Value>
+          <Value name="sigmoid.gamma">1.00000</Value>
+          <Value name="sigmoid.coef0">1.00</Value>
+          <Value name="grid.search">False</Value>
+          <Value name="gs.number">5</Value>
+          <Value name="gs.linear">False</Value>
+          <Value name="gs.linear.cost_min">1.00</Value>
+          <Value name="gs.linear.cost_max">1.00</Value>
+          <Value name="gs.polynomial">False</Value>
+          <Value name="gs.poly.cost_min">1.00</Value>
+          <Value name="gs.poly.cost_max">1.00</Value>
+          <Value name="gs.poly.degree_min">2.000</Value>
+          <Value name="gs.poly.degree_max">2.000</Value>
+          <Value name="gs.poly.gamma_min">1.00000</Value>
+          <Value name="gs.poly.gamma_max">1.00000</Value>
+          <Value name="gs.poly.coef0_min">1.00</Value>
+          <Value name="gs.poly.coef0_max">1.00</Value>
+          <Value name="gs.radial">True</Value>
+          <Value name="gs.radial.cost_min">1.00</Value>
+          <Value name="gs.radial.cost_max">1.00</Value>
+          <Value name="gs.radial.gamma_min">1.00000</Value>
+          <Value name="gs.radial.gamma_max">1.00000</Value>
+          <Value name="gs.sigmoid">False</Value>
+          <Value name="gs.sigmoid.cost_min">1.00</Value>
+          <Value name="gs.sigmoid.cost_max">1.00</Value>
+          <Value name="gs.sigmoid.gamma_min">1.00000</Value>
+          <Value name="gs.sigmoid.gamma_max">1.00000</Value>
+          <Value name="gs.sigmoid.coef0_min">1.00</Value>
+          <Value name="gs.sigmoid.coef0_max">1.00</Value>
+          <Value name="seed">1</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\SVM_v2.yxmc" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="426" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>D:\Users\izamoranoh\AppData\Local\Temp\Engine_5812_a6eebc22d65d449982811cb3b511647b_\Engine_12480_8446fdf1907e46b290de6b70623e8229_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Perfil</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="414" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>D:\Users\izamoranoh\AppData\Local\Temp\Engine_5812_a6eebc22d65d449982811cb3b511647b_\Engine_12480_a95961b62b3c4f418668132a94d92677_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Informe</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="546" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>D:\Users\izamoranoh\AppData\Local\Temp\Engine_5812_a6eebc22d65d449982811cb3b511647b_\Engine_12480_8281c3c4d349439daa7d4b6c10d7b9f2_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Informe</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Reports" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Object" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Report" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Ejercicio_2_20210816</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="5f7fa05d-42e2-4de3-aba5-e6e0ad2f6d0c" />
+      <Telemetry>
+        <PreviousWorkflowId value="3d5ac75d-c91f-4824-a0ce-c1838bbdac6f" />
+        <OriginWorkflowId value="5f7fa05d-42e2-4de3-aba5-e6e0ad2f6d0c" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Regresion 2.xlsx
+Query=`Volumetría$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Anio" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Mes" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Ramo_Emisor" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Endoso" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Incisos" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Clave_Agente" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Nombre_Agente" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Num_Sucursa_Agente" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Nombre_Promotoria" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Clave_Cliente" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Fecha_emision" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Date" />
+            <Field name="Fecha_inicio" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Date" />
+            <Field name="Fecha_termino" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Date" />
+            <Field name="Forma_Pago" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Usuario" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="User_Emi" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Nombre_Cliente" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Serie_Vehiculo" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Suc_Produccion" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Clave_poliza" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Clave_Unica" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Linea_Negocio" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Ramo_Emisor_Desc" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Producto_LN" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Subramo_1" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Subramo_2" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Clase_Base_Fac" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Tipo_Endoso_Ret" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Zona_Agente" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Suc_Agente" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Estatus_Agente" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Clase_Agente_Vta" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Clase_Agente_LN" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Ruta" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Area_Emisora" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Ejecutivo_Ventas" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Oficina_Ejecutivo" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Zona_Ejecutivo" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Zona_Riesgo" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Clase_Bien_Asegurado" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Mes_Nombre_Emision" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Dias_Cobertura" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Etiqueta_Cobertura" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Semana_Emision" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Dia_Emision" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Dia_Nombre_Emision" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Anio_Inicio_Vigencia" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Mes_Inicio_Vigencia" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Tipo_Cambio" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Prima_Neta_MXN" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Prima_Total_MXN" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Sistema" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Aut_Pro" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Direccion_User" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="SubArea_User" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Mes renombrado" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Orden del mes" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Orden_Subramo1" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="RFC_Asegurado" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Moneda" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Prima_Neta" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Clave_Poliza_02" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="Double" />
+            <Field name="Clave_poliza_B" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+            <Field name="Producto_02" size="255" source="File: D:\OneDrive - SERVICIOS ADMINISTRATIVOS PEÑA VERDE, SA DE CV - 2\Documents\Administrativo\Alteryx\Bases de Datos\Regresion 2.xlsx|||`Volumetría$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="210" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Ejercicio_2_20210811</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="2c6475db-f737-488c-941b-1c8e52d2740d" />
+      <Telemetry>
+        <PreviousWorkflowId value="fdfc0810-1755-454d-b5ca-1a4791290de2" />
+        <OriginWorkflowId value="fdfc0810-1755-454d-b5ca-1a4791290de2" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
